@@ -1,5 +1,5 @@
 package com.sun.board.springboot.web.dto;
-
+// 게시글 저장
 import com.sun.board.springboot.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
