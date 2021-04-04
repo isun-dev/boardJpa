@@ -64,6 +64,7 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getContent()).isEqualTo(content);
     }
 
+    // 게시글 수정
     @Test
     public void Posts_수정된다() throws Exception{
         // given
