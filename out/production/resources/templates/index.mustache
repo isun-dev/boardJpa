@@ -1,6 +1,6 @@
 {{>layout/header}}
 
-<h1>스프링부트로 시작하는 웹 서비스 Ver.2</h1>
+<h1>서울에서 살아남기</h1>
 <div class="col-md-12">
     <div class="row">
         <div class="col-md-6">
@@ -12,19 +12,27 @@
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
-            <th>게시글번호</th>
-            <th>제목</th>
+            <th>공고번호</th>
+            <th>유형</th>
+            <th>공고명</th>
+            <th>지역</th>
             <th>작성자</th>
-            <th>최종수정일</th>
+            <th>게시일</th>
+            <th>마감일</th>
+            <th>상태</th>
         </tr>
         </thead>
         <tbody id="tbody">
         {{#posts}}
             <tr>
                 <td>{{id}}</td>
+                <td>미정</td>
                 <td><a href="/posts/update/{{id}}">{{title}}</a></td>
+                <td>미정</td>
                 <td>{{author}}</td>
                 <td>{{modifiedDate}}</td>
+                <td>{{modifiedDate}}</td>
+                <td>공고중</td>
             </tr>
         {{/posts}}
         </tbody>
